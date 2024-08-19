@@ -1,4 +1,4 @@
-import { getMetadata } from '../../scripts/aem.js';
+import { decorateLinkedPictures, getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
@@ -163,4 +163,6 @@ export default async function decorate(block) {
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
   block.append(navWrapper);
+
+  decorateLinkedPictures(block);
 }
