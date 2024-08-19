@@ -7,6 +7,7 @@ import {
   decorateIcons,
   decorateSections,
   decorateBlocks,
+  decorateLinkedPictures,
   decorateTemplateAndTheme,
   waitForFirstImage,
   loadSection,
@@ -65,6 +66,7 @@ export function decorateMain(main) {
   decorateButtons(main);
   decorateIcons(main);
   buildAutoBlocks(main);
+  decorateLinkedPictures(main);
   decorateSections(main);
   decorateBlocks(main);
 }
